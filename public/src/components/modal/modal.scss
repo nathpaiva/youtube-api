@@ -1,0 +1,52 @@
+@import "../../css/variables/colors";
+@import "../../css/variables/medias";
+
+.videoModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: white;
+
+  .modalContent {
+    position: relative;
+    padding: 50px 10px 10px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #BBBBBB;
+    border-radius: 2px;
+    background-color: white;
+    box-sizing: border-box;
+  }
+
+  .modalClose {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 25px;
+    color: $bg-header-color;
+    padding: 14px;
+    vertical-align: top;
+    line-height: 15px;
+    z-index: 999;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    transform: rotate(45deg);
+  }
+
+  @media (min-width: $tablet) {
+    background-color: rgba(255, 255, 255, .8);
+
+    .modalContent {
+      max-width: 560px;
+      padding: 50px 22px 22px;
+      height: auto;
+    }
+  }
+}

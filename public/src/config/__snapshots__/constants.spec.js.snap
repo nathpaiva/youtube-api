@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Test value of constants #Should check API_KEY 1`] = `"AIzaSyCwChe2uQJtgQQuMdTdzJFgDC3J3Bx35Po"`;
+
+exports[`#Test value of constants #Should check API_URL 1`] = `"https://www.googleapis.com/youtube/v3/search"`;
+
+exports[`#Test value of constants #Should check API_URL_VIEWS 1`] = `"https://www.googleapis.com/youtube/v3/videos"`;
+
+exports[`#Test value of constants #Should check CHANNEL_ID 1`] = `"UC9d_htYmYYFUXB2vBKx4NgA"`;
+
+exports[`#Test value of constants #Should check MAX_RESULTS 1`] = `4`;
+
+exports[`#Test value of constants #Should check MIN_INCREMENTS 1`] = `4`;

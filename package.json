@@ -1,0 +1,68 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "main": "webpack-start.js",
+  "author": "NathPaiva",
+  "license": "MIT",
+  "react-hot-loader": "next",
+  "devDependencies": {
+    "@storybook/react": "^3.1.9",
+    "axios": "^0.16.2",
+    "babel-core": "^6.25.0",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "cross-env": "^5.0.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "imagemin-webpack-plugin": "^1.5.0-beta.0",
+    "jest": "^20.0.4",
+    "jest-cli": "^20.0.4",
+    "node-sass": "^4.5.3",
+    "react-hot-loader": "next",
+    "react-test-renderer": "^15.6.1",
+    "sass-loader": "^6.0.6",
+    "semver": "^5.3.0",
+    "style-loader": "^0.18.2",
+    "supertest": "^3.0.0",
+    "supertest-as-promised": "^4.0.2",
+    "webpack": "^3.0.0",
+    "webpack-bundle-analyzer": "^2.8.2",
+    "webpack-dashboard": "^0.4.0",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "es6-promise": "^4.1.1",
+    "immutable": "^3.8.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.2",
+    "redux": "^3.7.1",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "test:watch": "jest --watch",
+    "test": "jest --coverage",
+    "start": "webpack-dashboard -- node webpack-start.js",
+    "build": "cross-env NODE_ENV=production BABEL_ENV=production webpack --progress --config webpack/prod.config -p",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "automock": false,
+    "moduleNameMapper": {
+      "^.+\\.scss$": "<rootDir>/config/CSSStub.js",
+      "^[./a-zA-Z0-9$_-]+\\.png$": "<rootDir>/config/ImageStub.js",
+      "^[./a-zA-Z0-9$_-]+\\.jpg$": "<rootDir>/config/ImageStub.js"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Test ListFull Component #Should ListFull to mach snapshot - all videos with filter 1`] = `
+<div
+  className={undefined}
+>
+  <div
+    className={undefined}
+  >
+    <div>
+      <div
+        className={undefined}
+      >
+        <h1>
+          Resultados para: "ux"
+        </h1>
+      </div>
+      <div
+        className={undefined}
+      >
+        <ul />
+        <button
+          className={undefined}
+          disabled={undefined}
+          onClick={[Function]}
+        >
+          carregar mais vídeos...
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`#Test ListFull Component #Should ListFull to mach snapshot - all videos without filter 1`] = `
+<div
+  className={undefined}
+>
+  <div
+    className={undefined}
+  >
+    <div>
+      <div
+        className={undefined}
+      >
+        <h1>
+          Todos os vídeos do Canal
+        </h1>
+      </div>
+      <div
+        className={undefined}
+      >
+        <ul />
+        <button
+          className={undefined}
+          disabled={undefined}
+          onClick={[Function]}
+        >
+          carregar mais vídeos...
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,51 @@
+@import "../../css/variables/colors";
+@import "../../css/variables/medias";
+@import "../../css/variables/mixins";
+
+.video {
+  @include transition(opacity);
+  cursor: pointer;
+  display: flex;
+  height: 96px;
+  margin: .7em;
+  opacity: .8;
+  position: relative;
+
+  &:hover {
+    @include transition(opacity);
+    opacity: 1;
+  }
+
+  &__image {
+    background-color: #C8C8C8;
+    height: 96px;
+    margin-right: 5px;
+    width: 170px;
+  }
+
+  &__title {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: $bg-header-color;
+    display: -webkit-box;
+    font-size: 18px;
+    line-height: 22px;
+    max-height: 65px;
+    overflow: hidden;
+    width: 47%;
+  }
+
+  &__views {
+    bottom: 0;
+    font-size: 14px;
+    left: 175px;
+    position: absolute;
+
+    &_icon {
+      font-size: 22px;
+      margin-right: 5px;
+      position: relative;
+      top: 2px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../css/variables/medias";
+@import "../../css/variables/helpers";
+
+:global {
+  .container {
+    display: flex;
+    margin: 0 auto;
+    width: $width-content;
+
+    @media (max-width: $tablet) {
+      display: block;
+      width: 100vw;
+    }
+  }
+}

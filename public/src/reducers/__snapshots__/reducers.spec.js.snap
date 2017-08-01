@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Test reduces #Should check listvideos 1`] = `
+Immutable.List [
+]
+`;
+
+exports[`#Test reduces #Should check selectVideoReducer SELECTFIRST 1`] = `
+Array [
+  Object {
+    "id": 0,
+  },
+]
+`;
+
+exports[`#Test reduces #Should check selectVideoReducer SELECTONE 1`] = `
+Array [
+  Object {
+    "id": 0,
+  },
+]
+`;

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Test Home Component #Should Home to mach snapshot - all videos without filter 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className={undefined}
+    >
+      <h1>
+        + Vídeo
+      </h1>
+    </div>
+    <div
+      className={undefined}
+    >
+      <ul />
+      <button
+        className={undefined}
+        disabled={false}
+        onClick={[Function]}
+      >
+        carregar mais vídeos...
+      </button>
+    </div>
+  </div>
+</div>
+`;

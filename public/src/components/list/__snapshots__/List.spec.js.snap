@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Test List Component #Should List to mach snapshot with isFetching false 1`] = `
+<div>
+  <div
+    className={undefined}
+  >
+    <h1>
+      + Vídeo
+    </h1>
+  </div>
+  <div
+    className={undefined}
+  >
+    <ul>
+      <li
+        className="undefined "
+        onClick={[Function]}
+      >
+        <img
+          className={undefined}
+          src="https://i.ytimg.com/vi/PmkDh39vWZw/mqdefault.jpg"
+          width="170px"
+        />
+        <p
+          className={undefined}
+          title="#012 - Vinicius Rossi | Drops | Front-End Week 2017"
+        >
+          #012 - Vinicius Rossi | Drops | Front-End Week 2017
+        </p>
+        <span
+          className={undefined}
+        >
+          <i
+            className="undefined fa fa-eye"
+          />
+          <span>
+            136
+             views
+          </span>
+        </span>
+      </li>
+      <li
+        className="undefined "
+        onClick={[Function]}
+      >
+        <img
+          className={undefined}
+          src="https://i.ytimg.com/vi/bp9MxFV8F4A/mqdefault.jpg"
+          width="170px"
+        />
+        <p
+          className={undefined}
+          title="#011 - FEMUG SP | Front-End Week 2017"
+        >
+          #011 - FEMUG SP | Front-End Week 2017
+        </p>
+        <span
+          className={undefined}
+        >
+          <i
+            className="undefined fa fa-eye"
+          />
+          <span>
+            120
+             views
+          </span>
+        </span>
+      </li>
+      <li
+        className="undefined "
+        onClick={[Function]}
+      >
+        <img
+          className={undefined}
+          src="https://i.ytimg.com/vi/xjlIBDBVZok/mqdefault.jpg"
+          width="170px"
+        />
+        <p
+          className={undefined}
+          title="#010 - Coletividad | Front-End Week 2017"
+        >
+          #010 - Coletividad | Front-End Week 2017
+        </p>
+        <span
+          className={undefined}
+        >
+          <i
+            className="undefined fa fa-eye"
+          />
+          <span>
+            77
+             views
+          </span>
+        </span>
+      </li>
+      <li
+        className="undefined "
+        onClick={[Function]}
+      >
+        <img
+          className={undefined}
+          src="https://i.ytimg.com/vi/cLydhFnGJ7s/mqdefault.jpg"
+          width="170px"
+        />
+        <p
+          className={undefined}
+          title="#009 - HTML SP | Front-End Week 2017"
+        >
+          #009 - HTML SP | Front-End Week 2017
+        </p>
+        <span
+          className={undefined}
+        >
+          <i
+            className="undefined fa fa-eye"
+          />
+          <span>
+            219
+             views
+          </span>
+        </span>
+      </li>
+    </ul>
+    <button
+      className={undefined}
+      disabled={false}
+      onClick={[Function]}
+    >
+      carregar mais vídeos...
+    </button>
+  </div>
+</div>
+`;
+
+exports[`#Test List Component #Should List to mach snapshot with isFetching true 1`] = `
+<div>
+  <div
+    className={undefined}
+  >
+    <h1>
+      + Vídeo
+    </h1>
+  </div>
+  <div
+    className={undefined}
+  >
+    <ul>
+      <li
+        className="undefined "
+        onClick={[Function]}
+      >
+        <img
+          className={undefined}
+          src="https://i.ytimg.com/vi/PmkDh39vWZw/mqdefault.jpg"
+          width="170px"
+        />
+        <p
+          className={undefined}
+          title="#012 - Vinicius Rossi | Drops | Front-End Week 2017"
+        >
+          #012 - Vinicius Rossi | Drops | Front-End Week 2017
+        </p>
+        <span
+          className={undefined}
+        >
+          <i
+            className="undefined fa fa-eye"
+          />
+          <span>
+            136
+             views
+          </span>
+        </span>
+      </li>
+      <li
+        className="undefined "
+        onClick={[Function]}
+      >
+        <img
+          className={undefined}
+          src="https://i.ytimg.com/vi/bp9MxFV8F4A/mqdefault.jpg"
+          width="170px"
+        />
+        <p
+          className={undefined}
+          title="#011 - FEMUG SP | Front-End Week 2017"
+        >
+          #011 - FEMUG SP | Front-End Week 2017
+        </p>
+        <span
+          className={undefined}
+        >
+          <i
+            className="undefined fa fa-eye"
+          />
+          <span>
+            120
+             views
+          </span>
+        </span>
+      </li>
+      <li
+        className="undefined "
+        onClick={[Function]}
+      >
+        <img
+          className={undefined}
+          src="https://i.ytimg.com/vi/xjlIBDBVZok/mqdefault.jpg"
+          width="170px"
+        />
+        <p
+          className={undefined}
+          title="#010 - Coletividad | Front-End Week 2017"
+        >
+          #010 - Coletividad | Front-End Week 2017
+        </p>
+        <span
+          className={undefined}
+        >
+          <i
+            className="undefined fa fa-eye"
+          />
+          <span>
+            77
+             views
+          </span>
+        </span>
+      </li>
+      <li
+        className="undefined "
+        onClick={[Function]}
+      >
+        <img
+          className={undefined}
+          src="https://i.ytimg.com/vi/cLydhFnGJ7s/mqdefault.jpg"
+          width="170px"
+        />
+        <p
+          className={undefined}
+          title="#009 - HTML SP | Front-End Week 2017"
+        >
+          #009 - HTML SP | Front-End Week 2017
+        </p>
+        <span
+          className={undefined}
+        >
+          <i
+            className="undefined fa fa-eye"
+          />
+          <span>
+            219
+             views
+          </span>
+        </span>
+      </li>
+    </ul>
+    <button
+      className={undefined}
+      disabled={true}
+      onClick={[Function]}
+    >
+      ...
+    </button>
+  </div>
+</div>
+`;

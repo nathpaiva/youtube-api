@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Test actions #Should check list one videos 1`] = `
+Object {
+  "list": Array [],
+  "type": "SELECTFIRST",
+}
+`;
+
+exports[`#Test actions #Should check list one videos 2`] = `
+Object {
+  "list": Array [],
+  "type": "SELECTONE",
+}
+`;
+
+exports[`#Test actions #Should check list videos 1`] = `
+Object {
+  "list": Array [],
+  "type": "LIST",
+}
+`;

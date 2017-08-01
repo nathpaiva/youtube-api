@@ -1,0 +1,148 @@
+@import "../../css/variables/medias";
+@import "../../css/variables/colors";
+@import "../../css/variables/mixins";
+@import "../../css/variables/fonts";
+
+.highlight {
+  margin-right: 1.3em;
+  width: 59%;
+  min-width: 560px;
+
+  @media (max-width: $tablet) {
+    display: block;
+    margin-right: 0;
+    width: 100vw;
+    min-width: initial;
+  }
+
+  &__title {
+    height: 4.5em;
+    line-height: 4.3em;
+
+    h1 {
+      color: $bg-header-color;
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+  }
+
+  &__video {
+    display: flex;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+
+  &__descmodal {
+    @extend %containerdesc;
+
+    &__title {
+      @extend %title;
+    }
+    &__snippets {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    &__text {
+      @extend %text;
+    }
+  }
+
+  &__desc {
+    @extend %containerdesc;
+    border: 1px solid $grey-default;
+    box-shadow: 0 3px 3px $grey-default;
+    padding: .7em;
+
+    &__title {
+      @extend %title;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: .1em .5em .5em;
+    }
+
+    &__text {
+      @extend %text;
+      padding: 0 .5em;
+    }
+
+    &:after {
+      @include linearGradient(rgba(255,255,255,.1), $main);
+      @include transition(height);
+      bottom: 0;
+      content: "";
+      height: 80px;
+      position: absolute;
+      right: 0;
+      width: 100%;
+    }
+
+    &:hover {
+      @include transition(height);
+      height: auto;
+      min-height:calc(179px - (1.2em * 2));
+      overflow: visible;
+
+      &:after {
+        @include transition(height);
+        height: 0;
+      }
+    }
+
+    &__snippets {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+
+      @media (max-width: $tablet) {
+        right: 15px;
+      }
+
+      &_icon {
+        color: $icon-blue;
+        cursor: pointer;
+        font-size: 24px;
+        margin-left: 10px;
+        &:hover {
+          :global {
+            .hide {
+              display: block;
+            }
+          }
+        }
+
+        @media (max-width: $tablet) {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+%containerdesc {
+  @include transition(height);
+  cursor: default;
+  // height: 119px;
+  height:calc(179px - (1.2em * 2));
+  margin: 1.2em 0;
+  // overflow: hidden;
+  position: relative;
+}
+
+%title {
+  display: block;
+  color: $bg-header-color;
+  font-size: 18px;
+  overflow: hidden;
+  width: 80%;
+}
+
+%text {
+  font-family: $lato;
+  font-size: 14px;
+  line-height: 22px;
+  overflow: hidden;
+}

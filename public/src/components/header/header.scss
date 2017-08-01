@@ -1,0 +1,215 @@
+@import "../../css/variables/colors";
+@import "../../css/variables/medias";
+@import "../../css/variables/mixins";
+@import "../../css/variables/helpers";
+@import "../../css/variables/fonts";
+
+.header {
+  background-color: $bg-header-color;
+  color: $main;
+  height: $header-height;
+  left: 0;
+  line-height: $header-height;
+  position: relative;
+  text-align: left;
+  top: 0;
+  width: 100vw;
+
+  &__content {
+    height: $header-height;
+    margin: 0 auto;
+    position: relative;
+    width: $width-content;
+
+    @media (max-width: $tablet) {
+      width: 100vw;
+    }
+  }
+
+  &__brand {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__logo {
+    display: inline-block;
+    line-height: $header-height;
+    vertical-align: middle;
+  }
+
+  &__menu {
+    @include transition(opacity);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+
+    @media (max-width: $tablet) {
+      right: 1px;
+    }
+
+    &:hover {
+      @include transition(opacity);
+      opacity: .5;
+
+      + .menuFloat {
+        @include transition(opacity);
+        display: block;
+        opacity: 1;
+      }
+    }
+
+    &_icon {
+      font-size: 1.1em;
+      margin-left: 10px;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  &__search {
+    @include border-radius(5px);
+    @include transition(all);
+    background: $header-height;
+    cursor: pointer;
+    position: absolute;
+    right: 80px;
+    display: inline-block;
+    top: 13px;
+    height: 30px;
+    width: 0;
+
+    &:hover {
+      @include transition(opacity);
+      opacity: .5;
+    }
+
+    &_input {
+      background: $bg-header-color;
+      border: 0;
+      color: $main;
+      font-family: $lato;
+      font-size: 14px;
+      height: 16px;
+      line-height: 16px;
+      outline: none;
+      position: absolute;
+      right: 30px;
+      top: 6px;
+      width: 0;
+    }
+
+    &.active {
+      @include transition(all);
+      background: $search-dark;
+      border: 1px solid $main;
+      opacity: 1;
+      width: 290px;
+
+      @media (max-width: $tablet) {
+        width: 60%;
+      }
+
+      .header__search_input {
+        @include transition(width);
+        background:$search-dark;
+        width: 252px;
+
+        @media (max-width: $tablet) {
+          width: 80%;
+        }
+      }
+
+      .header__search_icon {
+        top: 5px;
+        right: 9px;
+      }
+    }
+
+    &_icon {
+      font-size: 18px;
+      position: absolute;
+      right: 10px;
+      top: 6px;
+    }
+  }
+}
+
+.menuFloat {
+  @include border-radius(5px);
+  @include transition(opacity);
+  background: $main;
+  border: 1px solid $grey-default;
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+  padding: 8px;
+  position: absolute;
+  right: -17px;
+  top: 56px;
+  width: 253px;
+  z-index: 2;
+
+  &:after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $main;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 14px;
+    top: -9px;
+    width: 0;
+    z-index: 4;
+  }
+
+  &:before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $grey-default;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 14px;
+    top: -10px;
+    width: 0;
+    z-index: 4;
+  }
+
+  &:hover {
+    @include transition(opacity);
+    display: block;
+    opacity: 1;
+  }
+
+  &__item {
+    @include border-radius(5px);
+    color: $grey-hover;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 10px;
+
+    &:hover {
+      background-color: $menu-hover;
+    }
+
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: $grey-hover;
+
+      &:hover,
+      &:active {
+        color: $grey-hover;
+      }
+    }
+
+    &_icon {
+      color: $bg-header-color;
+      font-size: 22px;
+      margin-right: 10px;
+    }
+  }
+}

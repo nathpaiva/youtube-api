@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Test Detail Component #Should Detail to mach snapshot 1`] = `
+<div
+  className="highlightCss.highlight__descmodal"
+>
+  <div
+    className={undefined}
+  >
+    <iframe
+      allowFullScreen={true}
+      frameBorder="0"
+      height="310"
+      src="https://www.youtube.com/embed/PmkDh39vWZw"
+      width="560"
+    />
+  </div>
+  <div
+    className={undefined}
+  >
+    <span
+      className={undefined}
+      title="#012 - Vinicius Rossi | Drops | Front-End Week 2017"
+    >
+      #012 - Vinicius Rossi | Drops | Front-End Week 2017
+    </span>
+    <div
+      className={undefined}
+    >
+      <i
+        className="undefined fa fa-eye"
+        title=""
+      >
+        <div
+          className="hide"
+        >
+          <div
+            className={undefined}
+          >
+            17 de julho de 2017
+          </div>
+          <div
+            className={undefined}
+          >
+            <i
+              className="fa fa-caret-down"
+            />
+          </div>
+        </div>
+      </i>
+      <i
+        className="undefined tooltip fa fa-clock-o"
+        data-views="data"
+      >
+        <div
+          className="hide"
+        >
+          <div
+            className={undefined}
+          >
+            136 views
+          </div>
+          <div
+            className={undefined}
+          >
+            <i
+              className="fa fa-caret-down"
+            />
+          </div>
+        </div>
+      </i>
+    </div>
+    <p
+      className={undefined}
+    >
+      Artigo do Vinicius Rossi sobre a Front-end Week SP: https://medium.com/@vinirossi9/da-trufa-ao-front-end-week-sp-2017-1471562ef70 Site Oficial com todos ...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`#Test Detail Component #Should Detail with children to mach snapshot 1`] = `
+<div
+  className="highlightCss.highlight__descmodal"
+>
+  <button>
+    +
+  </button>
+  <div
+    className={undefined}
+  >
+    <iframe
+      allowFullScreen={true}
+      frameBorder="0"
+      height="310"
+      src="https://www.youtube.com/embed/PmkDh39vWZw"
+      width="560"
+    />
+  </div>
+  <div
+    className={undefined}
+  >
+    <span
+      className={undefined}
+      title="#012 - Vinicius Rossi | Drops | Front-End Week 2017"
+    >
+      #012 - Vinicius Rossi | Drops | Front-End Week 2017
+    </span>
+    <div
+      className={undefined}
+    >
+      <i
+        className="undefined fa fa-eye"
+        title=""
+      >
+        <div
+          className="hide"
+        >
+          <div
+            className={undefined}
+          >
+            17 de julho de 2017
+          </div>
+          <div
+            className={undefined}
+          >
+            <i
+              className="fa fa-caret-down"
+            />
+          </div>
+        </div>
+      </i>
+      <i
+        className="undefined tooltip fa fa-clock-o"
+        data-views="data"
+      >
+        <div
+          className="hide"
+        >
+          <div
+            className={undefined}
+          >
+            136 views
+          </div>
+          <div
+            className={undefined}
+          >
+            <i
+              className="fa fa-caret-down"
+            />
+          </div>
+        </div>
+      </i>
+    </div>
+    <p
+      className={undefined}
+    >
+      Artigo do Vinicius Rossi sobre a Front-end Week SP: https://medium.com/@vinirossi9/da-trufa-ao-front-end-week-sp-2017-1471562ef70 Site Oficial com todos ...
+    </p>
+  </div>
+</div>
+`;

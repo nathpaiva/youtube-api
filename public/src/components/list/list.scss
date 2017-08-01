@@ -1,0 +1,109 @@
+@import "../../css/variables/medias";
+@import "../../css/variables/colors";
+@import "../../css/variables/mixins";
+
+.list {
+  width: 41%;
+
+  @media (max-width: $tablet) {
+    display: block;
+    width: 100vw;
+  }
+
+  &__title {
+    height: 4.5em;
+    line-height: 4.3em;
+
+    h1 {
+      font-weight: normal;
+      color: $bg-header-color;
+      font-size: 1.7em;
+    }
+  }
+
+  &__container {
+    border: 1px solid $grey-default;
+    box-shadow: 0 3px 3px $grey-default;
+
+    ul {
+      max-height: 434px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+  }
+
+  &__more {
+    @include border-radius(5px);
+    border: 1px solid $grey-default;
+    cursor: pointer;
+    display: block;
+    width: calc(100% - (.7em * 2));
+    display: block;
+    font-size: 9px;
+    height: 22px;
+    line-height: 18px;
+    margin: .7em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #C8C8C8;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      background-color: $grey-hover;
+      color: $main;
+      transition: all .2s ease-in-out;
+    }
+
+    &.disable,
+    &:disabled {
+      cursor: initial;
+    }
+  }
+}
+
+.allvideos {
+  .video {
+    display: inline-flex;
+    margin: 10px 12px;
+    width: 31.6%;
+
+    @media (max-width: $tablet) {
+      display: flex;
+      margin: .7em;
+      width: auto;
+    }
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+
+      @media (max-width: $tablet) {
+        margin-right: .7em;
+      }
+    }
+
+    &:nth-child(3n+1) {
+      margin-left: 0;
+
+      @media (max-width: $tablet) {
+        margin-left: .7em;
+      }
+    }
+  }
+
+  &__more {
+    // @extend .list__more;
+    width: 364px;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+
+    @media (max-width: $tablet) {
+      width: 90%;
+    }
+
+    &.disable {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Test Item Component #Should Item to mach snapshot 1`] = `
+<li
+  className="undefined "
+  onClick={[Function]}
+>
+  <img
+    className={undefined}
+    src="https://i.ytimg.com/vi/PmkDh39vWZw/mqdefault.jpg"
+    width="170px"
+  />
+  <p
+    className={undefined}
+    title="#012 - Vinicius Rossi | Drops | Front-End Week 2017"
+  >
+    #012 - Vinicius Rossi | Drops | Front-End Week 2017
+  </p>
+  <span
+    className={undefined}
+  >
+    <i
+      className="undefined fa fa-eye"
+    />
+    <span>
+      136
+       views
+    </span>
+  </span>
+</li>
+`;
+
+exports[`#Test Item Component #Should Item with className to mach snapshot and click button 1`] = `
+<li
+  className="undefined video"
+  onClick={[Function]}
+>
+  <img
+    className={undefined}
+    src="https://i.ytimg.com/vi/PmkDh39vWZw/mqdefault.jpg"
+    width="170px"
+  />
+  <p
+    className={undefined}
+    title="#012 - Vinicius Rossi | Drops | Front-End Week 2017"
+  >
+    #012 - Vinicius Rossi | Drops | Front-End Week 2017
+  </p>
+  <span
+    className={undefined}
+  >
+    <i
+      className="undefined fa fa-eye"
+    />
+    <span>
+      136
+       views
+    </span>
+  </span>
+</li>
+`;
+
+exports[`#Test Item Component #Should Item with className to mach snapshot and click button 2`] = `
+<li
+  className="undefined video"
+  onClick={[Function]}
+>
+  <img
+    className={undefined}
+    src="https://i.ytimg.com/vi/PmkDh39vWZw/mqdefault.jpg"
+    width="170px"
+  />
+  <p
+    className={undefined}
+    title="#012 - Vinicius Rossi | Drops | Front-End Week 2017"
+  >
+    #012 - Vinicius Rossi | Drops | Front-End Week 2017
+  </p>
+  <span
+    className={undefined}
+  >
+    <i
+      className="undefined fa fa-eye"
+    />
+    <span>
+      136
+       views
+    </span>
+  </span>
+</li>
+`;

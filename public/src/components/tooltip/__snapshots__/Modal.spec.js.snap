@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Test Tooltip Component #Should Tooltip to mach snapshot: date 1`] = `
+<div
+  className="hide"
+>
+  <div
+    className={undefined}
+  >
+    17 de julho de 2017
+  </div>
+  <div
+    className={undefined}
+  >
+    <i
+      className="fa fa-caret-down"
+    />
+  </div>
+</div>
+`;
+
+exports[`#Test Tooltip Component #Should Tooltip to mach snapshot: views 1`] = `
+<div
+  className="hide"
+>
+  <div
+    className={undefined}
+  >
+    136 views
+  </div>
+  <div
+    className={undefined}
+  >
+    <i
+      className="fa fa-caret-down"
+    />
+  </div>
+</div>
+`;
