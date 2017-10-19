@@ -1,54 +1,54 @@
 # Youtube - API - redux
 
-## Projeto desenvolvido com:
-* React e redux
+## Project developed with:
+* React and redux
 
-## Teste desenvolvido com:
+## Test developed with:
 * Jest
-* Storybook - visualização de componentes 
+* Storybook - viewing Components
 
-## Para rodar o projeto é preciso instalar:
+## To run the project you need to install:
 * [Node](https://nodejs.org/en/download/)
-* [Yarn](https://yarnpkg.com/lang/en/docs/install/) ou NPM (já instalado com o node)
+* [Yarn](https://yarnpkg.com/lang/en/docs/install/) or NPM (already installed with node)
 
-### E clonar o repositório
+### And clone the repository
 ```sh
 $ git clone git@github.com:nathpaiva/youtube-api.git
 ```
 
-## Antes de dar start no projeto é preciso instalar as dependencias:
+## Before starting the project you must install the dependencies:
 ```sh
-$ yarn 
-ou 
+$ yarn
+or
 $ npm install
 ```
 
-## Para dar start no projeto é preciso rodar os comandos:
+## To start the project you have to run the commands:
 ```sh
 $ yarn start
-ou 
+or
 $ npm start
 ```
-* Esse comando da acesso a [http://localhost:2000](http://localhost:2000), dando início ao front-end
+* This command to access [http://localhost:2000](http://localhost:2000), starting the front end
 
-## Caso queira ver a cobertura de teste:
+## If you want to see the test coverage:
 ```sh
 $ yarn test
-ou 
+or
 $ npm test
 ```
 
-## Para poder ver os componentes no Storybook:
+## To be able to see the components in Storybook:
 ```sh
 $ yarn storybook
-ou 
+or
 $ npm storybook
 ```
-* Esse comando da acesso a [http://localhost:6006/](http://localhost:6006/)
+* This command to access [http://localhost:6006/](http://localhost:6006/)
 
-## Para fazer o build do projeto:
+## To build the project:
 ```sh
 $ yarn build
-ou 
+or
 $ npm run build
 ```
